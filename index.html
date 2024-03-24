@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>NEXUS INFO</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>create account</h1>
+                <span>use your email register</span>
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+                <input type="password" placeholder="password">
+                <button>SIGNUP</button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>sign in</h1>
+                <span>use your account</span>
+                <input type="email" placeholder="email">
+                <input type="password" placeholder="password">
+                <button>SIGNUP</button>
+                <button class="login-btn"  ><a href="https://nexusinfo.in/">login</a></button>
+             
+            </form>
+
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>WELCOME TO NEXUS INFO</h1>
+                    <P>YOUR WELCOME</P>
+                    <button class="press" id="signin">sign in</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>NEXUS INFO</h1>
+                    <P>warmly welcomed into the internship</P>
+                    <button class="press" id="signup">sign up</button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <script>
+
+        const signupbutton = document.getElementById("signup")
+        const signinbutton = document.getElementById("signin")
+        const container = document.getElementById("container")
+
+
+        signupbutton.addEventListener('click', () =>{
+            container.classList.add("right-panel-active")
+        })
+        signinbutton.addEventListener('click', () =>{
+            container.classList.remove("right-panel-active")
+        })
+
+    </script>
+    
+</body>
+</html>
